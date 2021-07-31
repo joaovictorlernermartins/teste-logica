@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teste.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <title>Pontuação</title>
+</head>
+<body>
+    <header>
+        <nav>
+            
+                <a class="logo" href="teste.html">DKT</a>
+                <ul class="nav-list">
+                <li><a class="button-menu" href="teste.html">Início</a></li>
+                <li><a class="button-menu" href="teste.html">Contato</a></li>
+                <li><a class="button-menu" href="teste.html">Sobre</a></li>
+                </ul>
+          
+        </nav>
+    </header>
+
+    <main>
+        <section class="sectionConteudo">
+            <div class="textbox">
+            <input type="text" name="nome" id="inpPontuacao" class="inputUser" required>
+            <label for="nome" class="labelPontuacao">Sua pontuação</label><br>
+            </div>
+        <input type="submit" onclick="score()" name="submit" id="submit">
+        <div id="divSaida"></div>
+    <script>
+        function score()
+        {
+          var pontuacao = Number(document.getElementById("inpPontuacao").value)
+          var texto = ''
+          
+        if (pontuacao == "" )
+            {
+                texto += `Insira um número.`
+            }
+            else{ if(pontuacao < 0)
+                {
+                    texto+= `Numero invalido! Sua pontuação é positiva`
+                }
+                 else{
+                    if(pontuacao > 0 && pontuacao <= 10)
+                    {
+                    texto += `Você se deu mal! Sua pontuação foi de ${pontuacao}`
+                //   document.getElementById('divSaida').style.backgroundColor = 'Red'
+                    }
+                    else{
+                        if(pontuacao > 10 && pontuacao <=100)
+                        {
+                            texto += `Você pode se esforçar mais para atingir seu objetivo! Sua pontuação foi de ${pontuacao}`
+                        //   document.getElementById('divSaida').style.backgroundColor = 'Blue'
+                        }
+                            else{
+                                if(pontuacao >100 && pontuacao <=200)
+                                {
+                                    texto += `Legal! Sua pontuação foi de ${pontuacao}`
+                                //  document.getElementById('divSaida').style.backgroundColor = 'Yellow'
+                                }
+                                    else{
+                                        if (pontuacao > 200)
+                                        {
+                                            texto += `MITOU! Sua pontuação foi de ${pontuacao}`
+                                        // document.getElementById('divSaida').style.backgroundColor = 'Green'
+                                        }
+                                            else
+                                            {
+                                            texto += `Sua pontuação é um número!`
+                                            // document.getElementById('botao1').style.backgroundColor = 'Orange'
+                                            }
+                                    }
+                            }           
+                   }
+                }
+            }
+            
+            document.getElementById('divSaida').innerHTML = texto
+        }
+    </script>
+</section>
+</main>
+
+</body>
+</html>

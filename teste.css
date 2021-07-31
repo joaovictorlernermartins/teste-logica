@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    background-image: url("forzawallpaper.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    height: 100vh;
+}
+.sectionConteudo{
+    text-align: center;
+    color: rgb(255,255,255,0.6);
+    background:rgb(0,0,0,0.6);
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid ;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    width: 40%;
+    height: 40%;
+    transition: 1s;
+    animation-name: animation;
+}
+
+#inpPontuacao{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+#submit{
+    background-image: linear-gradient(to right, rgb(156, 1, 60), rgb(75, 0, 4));
+    width: 30%;
+    border: none;
+    padding: 0px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 15%;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
+#submit:active{
+    width: 29%;
+    height: 14%;
+    transition: 0.1s;
+    font-size: 14px;
+    margin-bottom: 23px;
+}
+#divSaida{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+.logo{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: 'Style Script', cursive;
+    font-size: 150%;
+    color: rgb(239, 13, 109);
+    opacity: 1.0!important; 
+    text-decoration: dotted;  
+    animation-name: example;
+    animation-duration: 4s ;
+  }
+  
+  @keyframes example {
+    0%   {color: rgb(0, 0, 0,0);}
+    100% {color: rgb(239, 13, 109,1);}
+  }
+
+nav{
+    background:rgb(0,0,0,0.5); 
+    display: flex;
+    padding-left: 25%;
+    height: 54px;
+    
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    color: white;
+    margin-top: 1.0%;
+    width: 55%;
+    font-size: 130%;
+    padding-left: 25%;
+    
+}
+
+.nav-list li{
+    letter-spacing: 1px;
+    padding-left: 15%;
+    padding-right: 5%;
+}
+.button-menu{
+    color: rgb(255,255,255,0.9);
+    text-decoration: none;
+    font-family:'Oswald', sans-serif;
+    position: absolute;
+    transition: .3s;
+
+}
+.button-menu:hover{
+    color: rgb(239, 13, 109,1);
+    transition: .3s;
+    height: 6%;
+    border-bottom: 1px solid rgb(239, 13, 109,1);
+
+}
+.logo:hover{
+    color: rgb(239, 13, 109);
+}
+.nav-list ul li a{
+    height: 100%;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 50%;
+    letter-spacing: 2px;
+}
+#inpPontuacao{
+    width: 50%;
+    margin-left: 0%;
+}
+.labelPontuacao{
+    position: absolute;
+    top: 15%;
+    left: 42%;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelPontuacao,
+.inputUser:valid ~ .labelPontuacao{
+    top: 10%;
+    left: 25%;
+    font-size: 14px;
+    color: rgb(239, 13, 109);
+}
+.inputUser:focus{
+    border-bottom: 1px solid rgb(239, 13, 109);
+    transition: .7s;
+}
+.inputUser:valid{
+    border-bottom: 1px solid rgb(239, 13, 109);
+    transition: .7s;
+}
+.sectionConteudo:hover{
+    border-color: rgba(245, 2, 95, 0.295);
+    transition: 1.5s;
+}
