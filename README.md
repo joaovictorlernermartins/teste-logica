@@ -1,4 +1,4 @@
-![image](https://github.com/dkt0001/teste-logica/assets/81587343/b9f7d037-ac31-4b06-8759-a134ba6bd679)# teste-logica
+# Teste de logica (Html,Css e JS)
 Um simples teste para exercitar a lógica de programação. Contém html,css e js.
 
 
